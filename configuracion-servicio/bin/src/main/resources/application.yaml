@@ -1,0 +1,12 @@
+server:
+  port: 7070
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: config-server
+          uri: https://github.com/fhantoing/spring-api-microservices.git
+          search-paths: configuracion-datos
+  application:
+    name: configuracion-service
