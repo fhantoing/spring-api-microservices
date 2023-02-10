@@ -1,2 +1,10 @@
 server:
   port: 7051
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://locahost:8761/eureka
+    instance:
+      hostname: localhost
