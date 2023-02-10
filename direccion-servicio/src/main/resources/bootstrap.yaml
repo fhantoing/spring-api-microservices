@@ -3,5 +3,5 @@ spring:
     name: direccion-service
   cloud:
     config:
-      enabled: true
       uri: http://localhost:7070
+      enabled: true

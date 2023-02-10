@@ -5,8 +5,8 @@ spring:
     config:
       server:
         git:
-          default-label: config-server
-          uri: https://github.com/fhantoing/spring-api-microservices.git
-          search-paths: configuracion-datos
+          uri: https://github.com/fhantoing/spring-api-microservices
+          search-paths: configuracion-data
+        default-label: main
   application:
     name: configuracion-service
