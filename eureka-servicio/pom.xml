@@ -9,7 +9,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.eureka.servicio</groupId>
-	<artifactId>ureka-servicio</artifactId>
+	<artifactId>eureka-servicio</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ureka-servicio</name>
 	<description>Spring API Microservices</description>
