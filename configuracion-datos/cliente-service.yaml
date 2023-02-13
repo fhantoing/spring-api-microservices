@@ -7,4 +7,4 @@ eureka:
     service-url:
       default-zone: http://locahost:8761/eureka
   instance:
-    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
