@@ -6,5 +6,5 @@ eureka:
     register-with-eureka: true
     service-url:
       default-zone: http://locahost:8761/eureka
-    instance:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+instance:
+  instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
