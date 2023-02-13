@@ -1,7 +1,6 @@
-spring:
-  application:
-    name: eureka-servicio
-  cloud:
-    config:
-      enabled: true
-      uri: http://localhost:7050
+server:
+  port: 8761
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
