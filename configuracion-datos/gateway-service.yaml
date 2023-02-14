@@ -5,4 +5,4 @@ eureka:
     service-url:
       default-zone: http://locahost:8761/eureka
   instance:
-    hostname: locahost
+    hostname: localhost
