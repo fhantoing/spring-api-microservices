@@ -1,5 +1,3 @@
-server:
-  port: 7080
 eureka:
   client:
     fetch-registry: true
@@ -7,4 +5,4 @@ eureka:
     service-url:
       default-zone: http://locahost:8761/eureka
   instance:
-    hostname: localhost
+    hostname: ${spring.application.name}:localhost
