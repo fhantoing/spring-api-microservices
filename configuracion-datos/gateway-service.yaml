@@ -5,20 +5,4 @@ eureka:
     service-url:
       default-zone: http://locahost:8761/eureka
   instance:
-    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-
-spring:
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-      - id: cliente-service
-        uri: lb://cliente-service
-        predicates:
-        - path=/cliente/**
-      - id: direccion-service
-        uri: lb://direccion-service
-        predicates:
-        - path=/direccion/**
+    hostname: locahost
