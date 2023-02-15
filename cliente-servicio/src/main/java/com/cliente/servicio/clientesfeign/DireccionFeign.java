@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.cliente.servicio.modelo.Direccion;
 
-@FeignClient(name = "direccion-service", url = "http://localhost:7052")
+@FeignClient(name = "direccion-service")
 @RequestMapping("/direccion")
 public interface DireccionFeign {
 

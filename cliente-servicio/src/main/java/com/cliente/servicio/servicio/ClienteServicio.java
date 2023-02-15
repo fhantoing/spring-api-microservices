@@ -25,7 +25,7 @@ public class ClienteServicio {
 	private DireccionFeign direccionFeign;
 
 	public List<Direccion> getDirecciones(int clienteId) {
-		List<Direccion> direcciones = restTemplate.getForObject("http://localhost:7052/direccion/cliente/" + clienteId,
+		List<Direccion> direcciones = restTemplate.getForObject("http://localhost:7070/direccion/cliente/" + clienteId,
 				List.class);
 		return direcciones;
 	}
