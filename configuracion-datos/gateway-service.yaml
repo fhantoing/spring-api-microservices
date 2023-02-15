@@ -1,8 +1,15 @@
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      default-zone: http://locahost:8761/eureka
-  instance:
-    hostname: localhost
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+       - id: cliente-service
+         uri: lb://cliente-service
+         predicates:
+           - Path=/cliente/**
+       - id: direccion-service
+         uri: lb://direccion-service
+         predicates:
+           - Path=/direccion/**
