@@ -84,7 +84,7 @@ public class ClienteControlador {
 	}
 
 	@SuppressWarnings({ "unused", "rawtypes" })
-	private ResponseEntity<List<Direccion>> fallbackGuardarDireccion(@PathVariable("clienteId") int id,
+	private ResponseEntity<Direccion> fallbackGuardarDireccion(@PathVariable("clienteId") int id,
 			@RequestBody Direccion direccion, RuntimeException ex) {
 		return new ResponseEntity("Ha ocurrido un inconveniente al guardar las dirección del Cliente: " + id,
 				HttpStatus.OK);

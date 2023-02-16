@@ -3,7 +3,6 @@ package com.cliente.servicio.servicio;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -25,7 +24,7 @@ public class ClienteServicio {
 	private DireccionFeign direccionFeign;
 
 	public List<Direccion> getDirecciones(int clienteId) {
-		List<Direccion> direcciones = restTemplate.getForObject("http://localhost:7070/direccion/cliente/" + clienteId,
+		List<Direccion> direcciones = restTemplate.getForObject("http://direccion-service/direccion/cliente/" + clienteId,
 				List.class);
 		return direcciones;
 	}
