@@ -2,6 +2,9 @@ server:
   port: 7050
 
 spring:
+  application:
+    name: configuracion-service
+
   cloud:
     config:
       server:
@@ -9,5 +12,3 @@ spring:
           uri: https://github.com/fhantoing/spring-api-microservices
           search-paths: configuracion-datos
         default-label: main
-  application:
-    name: configuracion-service
