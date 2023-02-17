@@ -1,5 +1,6 @@
 server:
   port: 7050
+
 spring:
   cloud:
     config:
