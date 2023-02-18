@@ -3,3 +3,4 @@ zipkin-server-2.24.0-exec.jar
 configuracion-servicio/target/classes/META-INF/maven/com.configuracion.servicio/configuracion-servicio/pom.properties
 configuracion-servicio/target/test-classes/com/configuracion/servicio/ConfiguracionServicioApplicationTests.class
 configuracion-servicio/target/classes/META-INF/maven/com.configuracion.servicio/configuracion-servicio/pom.properties
+configuracion-servicio/target/classes/com/configuracion/servicio/ConfiguracionServicioApplication.class

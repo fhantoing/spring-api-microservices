@@ -6,8 +6,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableFeignClients
-@SpringBootApplication
 @EnableEurekaClient
+@SpringBootApplication
 public class ClienteServicioApplication {
 
 	public static void main(String[] args) {

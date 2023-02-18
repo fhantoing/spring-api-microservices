@@ -1,6 +1,7 @@
 spring:
   application:
     name: direccion-service
+    
   cloud:
     config:
       uri: http://localhost:7050
